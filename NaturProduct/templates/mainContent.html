@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block css_additional %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'main/css/mainContent.css' %}"/>
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid text-center">
+  <div class="row">
+    <div class="col-2">
+        <div class="categories">
+            <h3>Категории товаров</h3>
+            <a href="#">
+                <ul>Овощи
+                    <li><a href="#">Картофель</a></li>
+                    <li><a href="#">Картофель</a></li>
+                    <li><a href="#">Картофель</a></li>
+                    <li><a href="#">Картофель</a></li>
+                    <li><a href="#">Картофель</a></li>
+                </ul>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-7">
+        <div class="catalog">
+        </div>
+    </div>
+
+    <div class="col-3">
+        <div class="basket">
+            <aside id="CART_POPUP_ID" aria-hidden="true" class="c2fxtd3" style="--c2fxtd3-0:72px;--c2fxtd3-1:173px;--c2fxtd3-5:0;--c2fxtd3-6:none;--c2fxtd3-7:translateY(-10%);--c2fxtd3-10:80px;--c2fxtd3-11:calc(100vh - 80px)"><div class="c1ashdhs" bis_skin_checked="1">
+                <h2 class="emptyBasket bke4iw0"><span class="l8u3r0f h1edab9o"><span class="ttu50to t18stym3 tm0fzgs bdxkmhu bqq1kap n1fcpzs l14lhr1r">Корзина</span></span></h2>
+                <div class="e1991ocr" bis_skin_checked="1"><div class="ijvr8gq" bis_skin_checked="1">
+                    <img src="https://yastatic.net/s3/lavka-web/public/assets/images/emptyCart@2x.png" width="100" alt="" loading="eager">
+                </div>
+                    <h3 class="lhyihcq"><span class="l8u3r0f h1edab9o">
+                        <span class="ttu50to t18stym3 tm0fzgs bdxkmhu bqq1kap n1fcpzs c1strl4x">В вашей корзине <br> пока пусто</span>
+                    </span>
+                    </h3>
+                    <div class="t1vrfrqt t18stym3 bw441np r88klks r1dbrdpx n10d4det c1strl4x" style="--t1vrfrqt-0:0px;--t1vrfrqt-1:16px;--t1vrfrqt-2:0px;--t1vrfrqt-3:0px;--t1vrfrqt-4:21px;--t1vrfrqt-5:var(--theme-text);--t1vrfrqt-6:16px;--t1vrfrqt-7:pre-wrap;--t1vrfrqt-8:auto;--t1vrfrqt-9:unset;--t1vrfrqt-10:block" bis_skin_checked="1">Тут&nbsp;появятся товары, которые вы&nbsp;закажете.</div>
+                </div>
+                <div class="emptyBasket s1ea1bwd" bis_skin_checked="1">
+                    <button class="bzscopr f3gf8dt c14xrn6c ddkmvth lyrhcg6 ljufohk d1540h6z d1bidxav" disabled="" type="button">
+                        <span class="c19ph74x">
+                            <span class="co90b2r">
+                                <span class="c1xaghy0">
+                                    <span class="t18stym3 bw441np r88klks r1dbrdpx n10d4det l14lhr1r">Закажите что-нибудь</span>
+                                    <div class="p1kjmn3q" role="text" bis_skin_checked="1"><span class="n1spvqtv"><!--noindex--></span>
+                                        <span class="a1dq5c6d" role="text">0&nbsp;₽</span><span class="n1spvqtv"><!--/noindex--></span>
+                                        <span class="tmwo625"><span class="t18stym3 b1clo64h m493tk9 m1fg51qz tnicrlv l14lhr1r" aria-hidden="true" style="color:var(--theme-text-on-control)">0&nbsp;₽</span>
+                                        </span></div></span></span></span></button>
+                </div>
+                <span class="n1spvqtv"><!--noindex--></span>
+                <span class="a1dq5c6d" role="text" aria-live="polite" aria-atomic="true">Корзина - 0&nbsp;₽</span>
+                <span class="n1spvqtv"><!--/noindex--></span>
+            </div></aside>
+        </div>
+    </div>
+
+  </div>
+</div>
+
+{% endblock %}
