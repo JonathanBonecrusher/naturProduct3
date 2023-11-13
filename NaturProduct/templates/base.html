@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html>
     <head>
+        {% load static %}
+        {% block css_additional %} {% endblock %}
+        <link rel="stylesheet" href="{% static 'main/css/base.css' %}"/>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
               integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
     <title>Title</title>
 </head>
 <body>
-{% load static %}
-<header class="bg-info p-3">
-
+<header class="back-color p-2">
     <div class="container-fluid">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="{% url 'home' %}"><img src="{% static 'img/logo2.png' %}"></a> | <a href="{% url 'login' %}">Login</a>
-        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-secondary text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
-        </a>
+      <div class="d-flex flex-wrap align-items-center justify-content-md-around">
+          <a href="{% url 'home' %}"><img src="{% static 'img/logo2.png' %}"></a>
 
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-          <li><a href="#" class="nav-link px-2 text-secondary">Features</a></li>
-          <li><a href="#" class="nav-link px-2 text-secondary">Pricing</a></li>
-          <li><a href="#" class="nav-link px-2 text-secondary">FAQs</a></li>
-          <li><a href="#" class="nav-link px-2 text-secondary">About</a></li>
-        </ul>
-
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+        <form class="col-12 w-50 col-lg-auto mb-auto mb-lg-0 me-lg-auto" role="search">
+          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Поиск..." aria-label="Search">
         </form>
 
+        <ul class="nav col-12 col-lg-2 me-lg-auto mb-2 justify-content-end mb-md-0">
+            <li><a href="#" class="nav-link px-2 text-secondary">Features</a></li>
+            <li><a href="#" class="nav-link px-2 text-secondary">Features</a></li>
+            <li><a href="#" class="nav-link px-2 text-secondary">Features</a></li>
+        </ul>
+
         <div class="text-end">
-          <button type="button" class="btn btn-outline-secondary me-2">Login</button>
+          <button  type="button" class="btn btn-outline-secondary me-0">
+              <a href="{% url 'login' %}" class="text-secondary">Login</a>
+          </button>
           <button type="button" class="btn btn-success">Sign-up</button>
         </div>
       </div>
     </div>
-  </header>
+</header>
+
 {% block content %}
 {% endblock %}
 
+{% block side_bar %}
+{% endblock %}
 <footer>
 
 </footer>
