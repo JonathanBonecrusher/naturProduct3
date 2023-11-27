@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fa39f8c8-c33b-4b18-bea3-e90c99aa2e6e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pythonProject.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/NaturProduct/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/NaturProduct/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/NaturProduct/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/NaturProduct/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/main/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/main/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/main/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/main/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/main/migrations/0002_order_orderemployee_order_orderuser_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/main/migrations/0003_alter_employee_employeejobtitle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/templates/singup.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2YnwtOG8ADoa4bKnuhwKcHVpapi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/marty/Desktop/naturProduct"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa39f8c8-c33b-4b18-bea3-e90c99aa2e6e" name="Changes" comment="" />
+      <created>1701174864426</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701174864426</updated>
+    </task>
+    <servers />
+  </component>
+</project>

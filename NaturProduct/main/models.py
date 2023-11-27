@@ -2,6 +2,8 @@ from django.db import models
 from datetime import datetime
 from django.utils import timezone
 from django.contrib.auth.models import AbstractUser
+from users.models import User, Employee
+
 class Product(models.Model):
     PRODUCT_TYPE_CHOICES = [
         ("ОВ", "Овощи"),
@@ -17,28 +19,6 @@ class Product(models.Model):
     productStatus = models.TextChoices("В наличии", "Не в начличии")
     productDescription = models.TextField()
 
-
-
-class Employee(models.Model):
-    EMPLOYEE_JOB_TITLE_CHOICES = [
-        ("АД", "Администратор"),
-        ("МД", "Менеджер доставок"),
-    ]
-
-    employeeId = models.IntegerField(primary_key=True)
-    employeeName = models.TextField(max_length=50)
-    employeeLogin = models.TextField(max_length=30)
-    employeePassword = models.TextField(max_length=20)
-    employeeJobTitle = models.TextField(choices=EMPLOYEE_JOB_TITLE_CHOICES)
-
-
-
-class User(AbstractUser):
-    userId = models.IntegerField(primary_key=True)
-    userName = models.TextField(max_length=50)
-    userEmail = models.EmailField(max_length=30)
-    userLogin = models.TextField(max_length=30)
-    userPassword = models.TextField(max_length=20)
 
 class Request(models.Model):
     requestId = models.IntegerField(primary_key=True)

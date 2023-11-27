@@ -13,10 +13,10 @@
 <header class="back-color p-2">
     <div class="container-fluid">
       <div class="d-flex flex-wrap align-items-center justify-content-md-around">
-          <a href="{% url 'home' %}"><img src="{% static 'img/logo2.png' %}"></a>
+        <a href="{% url 'home' %}"><img src="{% static 'img/logo2.png' %}"></a>
 
         <form class="col-12 w-50 col-lg-auto mb-auto mb-lg-0 me-lg-auto" role="search">
-          <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Поиск..." aria-label="Search">
+            <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Поиск..." aria-label="Search">
         </form>
 
         <ul class="nav col-12 col-lg-2 me-lg-auto mb-2 justify-content-end mb-md-0">
@@ -25,12 +25,21 @@
             <li><a href="#" class="nav-link px-2 text-secondary">Features</a></li>
         </ul>
 
-        <div class="text-end">
+        {% if user.is_authenticated %}
+          <p class="text-end align-items-center"> Привет! {{ user.userName }}</p>
           <button  type="button" class="btn btn-outline-secondary me-0">
-              <a href="{% url 'login' %}" class="text-secondary">Login</a>
+             <a href="" class="text-secondary">Выйти</a>
           </button>
-          <button type="button" class="btn btn-success">Sign-up</button>
-        </div>
+        {% else %}
+          <div class="text-end">
+              <button type="button" class="btn btn-outline-secondary me-0">
+                  <a href="{% url 'login' %}" class="text-secondary">Войти</a>
+              </button>
+              <button type="button" class="btn btn-outline-success">
+                  <a href="{% url 'signup' %}" class="text-secondary">Зарегистрироваться</a>
+              </button>
+          </div>
+        {% endif %}
       </div>
     </div>
 </header>
