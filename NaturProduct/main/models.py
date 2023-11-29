@@ -6,22 +6,28 @@ from users.models import User, Employee
 
 class Product(models.Model):
     PRODUCT_TYPE_CHOICES = [
-        ("ОВ", "Овощи"),
-        ("ФП", "Фрукты"),
-        ("ГП", "готовая продукция"),
-        ("ПР", "Прочее"),
+        ("Овощи", "Овощи"),
+        ("Фрукты", "Фрукты"),
+        ("Готовая продукция", "Готовая продукция"),
+        ("Прочее", "Прочее"),
     ]
 
-    productId = models.IntegerField(primary_key=True)
     productName = models.TextField(max_length=50)
     productType = models.TextField(choices=PRODUCT_TYPE_CHOICES)
     productCost = models.IntegerField()
     productStatus = models.TextChoices("В наличии", "Не в начличии")
     productDescription = models.TextField()
+    productImg = models.FileField(upload_to='static/img/prodImg')
+
+    cat_names = ["Овощи", "Фрукты", "Готовая продукция", "Прочее"]
+
+    def __str__(self):
+        return self.productName[:20]
+
+
 
 
 class Request(models.Model):
-    requestId = models.IntegerField(primary_key=True)
     userId = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
     userEmail = models.EmailField(max_length=30)
     requestText = models.TextField()
@@ -39,7 +45,6 @@ class Order(models.Model):
         ("ДО", "Доставлен"),
     ]
 
-    orderId = models.IntegerField(primary_key=True)
     orderDate = models.DateField(default=timezone.now)
     orderAddress = models.TextField(max_length=50)
     orderCost = models.IntegerField()
@@ -50,7 +55,6 @@ class Order(models.Model):
     orderUser = models.ForeignKey(User, on_delete=models.CASCADE, default=1)
 
 class OrderProduct(models.Model):
-    OPId = models.IntegerField(primary_key=True)
     OrderId = models.ForeignKey(Order, on_delete=models.CASCADE, default=1)
     ProductId = models.ForeignKey(Product, on_delete=models.CASCADE, default=1)
     ProductAmount = models.IntegerField()

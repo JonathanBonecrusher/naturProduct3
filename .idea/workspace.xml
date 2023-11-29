@@ -1,34 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa39f8c8-c33b-4b18-bea3-e90c99aa2e6e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pythonProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="fa39f8c8-c33b-4b18-bea3-e90c99aa2e6e" name="Changes" comment="kfh">
+      <change afterPath="$PROJECT_DIR$/NaturProduct/main/migrations/0003_alter_product_productimg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NaturProduct/main/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NaturProduct/media/static/img/prodImg/1663799070_59-mykaleidoscope-ru-p-salat-v-konteinere-yeda-krasivo-60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NaturProduct/media/static/img/prodImg/1674154559_1034289_gif-url.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NaturProduct/media/static/img/prodImg/9718c4a96d522c826406d45f2cb91600.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NaturProduct/media/static/img/prodImg/fru-101202_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NaturProduct/media/static/img/prodImg/stakan_odnorazovyy_komus_bumazhnyy_krasnyy_250_ml_75_shtuk_v_upakovke_4_full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NaturProduct/static/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NaturProduct/static/css/mainContent.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NaturProduct/static/img/prodImg/1663799070_59-mykaleidoscope-ru-p-salat-v-konteinere-yeda-krasivo-60.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NaturProduct/static/img/prodImg/1674154559_1034289_gif-url.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NaturProduct/static/img/prodImg/9718c4a96d522c826406d45f2cb91600.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NaturProduct/static/img/prodImg/fru-101202_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NaturProduct/static/img/prodImg/stakan_odnorazovyy_komus_bumazhnyy_krasnyy_250_ml_75_shtuk_v_upakovke_4_full.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NaturProduct/templates/registration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NaturProduct/templates/registration/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NaturProduct/NaturProduct/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/NaturProduct/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NaturProduct/NaturProduct/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/NaturProduct/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NaturProduct/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NaturProduct/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/main/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NaturProduct/main/forms.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/NaturProduct/main/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/main/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NaturProduct/main/migrations/0002_order_orderemployee_order_orderuser_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NaturProduct/main/migrations/0003_alter_employee_employeejobtitle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/main/migrations/0002_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/main/migrations/0002_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NaturProduct/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/main/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NaturProduct/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/static/main/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/static/main/css/mainContent.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/NaturProduct/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NaturProduct/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NaturProduct/templates/singup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/templates/mainContent.html" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/templates/mainContent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/templates/signup.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/users/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/users/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/users/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2YnwtOG8ADoa4bKnuhwKcHVpapi" />
   <component name="ProjectViewState">
@@ -39,9 +68,19 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/marty/Desktop/naturProduct"
+    "last_opened_file_path": "C:/Users/marty/Desktop/naturProduct/naturProduct/users/migrations",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\marty\Desktop\naturProduct\naturProduct\users\migrations" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\marty\Desktop\naturProduct\naturProduct\static" />
+      <recent name="C:\Users\marty\Desktop\naturProduct\naturProduct\templates\registration" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,6 +90,30 @@
       <option name="presentableId" value="Default" />
       <updated>1701174864426</updated>
     </task>
+    <task id="LOCAL-00001" summary="k">
+      <created>1701182700212</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701182700212</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="k" />
+    <MESSAGE value="kfh" />
+    <option name="LAST_COMMIT_MESSAGE" value="kfh" />
   </component>
 </project>

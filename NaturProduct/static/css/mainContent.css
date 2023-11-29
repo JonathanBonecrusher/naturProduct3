@@ -1,0 +1,36 @@
+.imgSmall{
+    width: 180px;
+    height: 180px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    padding: 2%;
+}
+.сonteiner{
+    padding: 10px;
+    display: flex;
+}
+
+.cat_plate{
+    margin: 10px;
+    width: 250px;
+    height: 280px;
+}
+
+.buttons-prod{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.buttons-prod-buttons{
+    justify-content: center
+}
+
+.cost{
+
+    align-items: end;
+}
+
+.fix-pos{
+    position: sticky;
+    top: 2em;
+}

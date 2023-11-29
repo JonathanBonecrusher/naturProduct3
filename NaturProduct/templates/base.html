@@ -3,7 +3,7 @@
     <head>
         {% load static %}
         {% block css_additional %} {% endblock %}
-        <link rel="stylesheet" href="{% static 'main/css/base.css' %}"/>
+        <link rel="stylesheet" href="{% static 'css/base.css' %}"/>
         <meta charset="utf-8">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
               integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
@@ -19,16 +19,16 @@
             <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Поиск..." aria-label="Search">
         </form>
 
-        <ul class="nav col-12 col-lg-2 me-lg-auto mb-2 justify-content-end mb-md-0">
-            <li><a href="#" class="nav-link px-2 text-secondary">Features</a></li>
-            <li><a href="#" class="nav-link px-2 text-secondary">Features</a></li>
-            <li><a href="#" class="nav-link px-2 text-secondary">Features</a></li>
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-auto justify-content-end mb-md-0">
+            <li><a href="#" class="nav-link px-2 text-secondary">История</a></li>
+            <li><a href="#" class="nav-link px-2 text-secondary">Поддержка</a></li>
+            <li><a href="#" class="nav-link px-2 text-secondary">Корзина</a></li>
         </ul>
 
         {% if user.is_authenticated %}
-          <p class="text-end align-items-center"> Привет! {{ user.userName }}</p>
+          <a href="#" class="col-12 col-lg-auto me-lg-auto mb-auto justify-content-end mb-md-0 btn-outline-secondary"> Привет! {{ user.username }}</a>
           <button  type="button" class="btn btn-outline-secondary me-0">
-             <a href="" class="text-secondary">Выйти</a>
+             <a href="{% url 'logout' %}" class="px-2 text-secondary">Выйти</a>
           </button>
         {% else %}
           <div class="text-end">
@@ -47,8 +47,6 @@
 {% block content %}
 {% endblock %}
 
-{% block side_bar %}
-{% endblock %}
 <footer>
 
 </footer>

@@ -1,6 +1,11 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import Product
 
-
-
-# Create your views here.
+def Products_home(request):
+    cat = Product.cat_names
+    product = Product.objects.all()
+    context = {
+        'product': product,
+        'category': cat
+    }
+    return render(request, 'mainContent.html', context)
