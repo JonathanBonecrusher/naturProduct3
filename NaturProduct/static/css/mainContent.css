@@ -5,7 +5,7 @@
     border-radius: 5px;
     padding: 2%;
 }
-.сonteiner{
+.сonteiner {
     padding: 10px;
     display: flex;
 }
@@ -33,4 +33,7 @@
 .fix-pos{
     position: sticky;
     top: 2em;
+}
+.pad-base {
+    margin: 10px;
 }

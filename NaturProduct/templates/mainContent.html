@@ -3,11 +3,12 @@
 
 {% block css_additional %}
 <link rel="stylesheet" href="{% static 'css/mainContent.css' %}"/>
+<script type="text/javascript" src="{% static 'js/product_home.js' %}"></script>
 {% endblock %}
 
 {% block content %}
 
-<div class=" container-fluid text-center">
+<div class="pad-base container-fluid text-center">
   <div class="row">
     <div class=" col-2">
         <div class="fix-pos categories">
@@ -33,19 +34,16 @@
                 {% for prod in product %}
                     {% if cat == prod.productType %}
                         <div class="cat_plate alert-warning">
-                            <h5>{{ prod.productName }}</h5>
+                            <h5>
+                                <a href="{% url 'productPage' prod.pk %}" class="prod-link">{{ prod.productName }}</a>
+                            </h5>
                             <figure>
                                 <img class="imgSmall me-0" src="{{ prod.productImg.url }}">
                             </figure>
                             <div class="buttons-prod">
-                            <p class="cost">{{ prod.productCost }} руб.</p>
+                            <span class="cost">{{ prod.productCost }} руб.</span>
                                 <div class="buttons-prod-buttons">
-                                    <button type="button" class="btn btn-outline-secondary me-0">
-                                        <a href="#" class="text-secondary">+</a>
-                                    </button>
-                                    <button type="button" class="btn btn-outline-secondary me-0">
-                                        <a href="#" class="text-secondary">-</a>
-                                    </button>
+                                    <button id="button-add" type="button" class="btn btn-outline-secondary me-0">Добавить в корзину</button>
                                 </div>
                             </div>
                         </div>

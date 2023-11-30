@@ -14,17 +14,9 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    
 }
 
 .prod-place {
-    padding: 10px;
-    display: flex;
     justify-content: start;
     align-items: center;
-}
-
-.buttons-place {
-    padding: 10px;
 }

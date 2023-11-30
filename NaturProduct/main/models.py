@@ -3,6 +3,7 @@ from datetime import datetime
 from django.utils import timezone
 from django.contrib.auth.models import AbstractUser
 from users.models import User, Employee
+from django.urls import reverse
 
 class Product(models.Model):
     PRODUCT_TYPE_CHOICES = [
@@ -23,6 +24,9 @@ class Product(models.Model):
 
     def __str__(self):
         return self.productName[:20]
+
+    def get_absolute_url(self):
+        return reverse('productPage', args=[str(self.id)])
 
 
 
