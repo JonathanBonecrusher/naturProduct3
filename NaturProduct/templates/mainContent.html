@@ -3,6 +3,7 @@
 
 {% block css_additional %}
 <link rel="stylesheet" href="{% static 'css/mainContent.css' %}"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="{% static 'js/product_home.js' %}"></script>
 {% endblock %}
 
@@ -41,9 +42,9 @@
                                 <img class="imgSmall me-0" src="{{ prod.productImg.url }}">
                             </figure>
                             <div class="buttons-prod">
-                            <span class="cost">{{ prod.productCost }} руб.</span>
-                                <div class="buttons-prod-buttons">
-                                    <button id="button-add" type="button" class="btn btn-outline-secondary me-0">Добавить в корзину</button>
+                                <span class="cost">{{ prod.productCost }} руб.</span>
+                                <div id="button-add"  class="add-buttons">
+                                    <button type="button" class="button-add btn btn-outline-secondary me-0">Добавить в корзину</button>
                                 </div>
                             </div>
                         </div>

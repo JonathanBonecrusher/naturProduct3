@@ -1,4 +1,4 @@
-window.onload=function(){
+window.addEventListener("DOMContentLoaded", (event) => {
     var button1 = document.getElementById('button-plus');
     var button2 = document.getElementById('button-minus');
     var num_place = document.getElementById('selected-num');
@@ -16,7 +16,6 @@ window.onload=function(){
     }
     
     button1.addEventListener("click", plus, false);
-    
     button2.addEventListener("click", minus, false);
-}
+});
 

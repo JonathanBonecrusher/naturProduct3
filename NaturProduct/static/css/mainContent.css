@@ -37,3 +37,7 @@
 .pad-base {
     margin: 10px;
 }
+
+.hide{
+    visibility: hidden;
+}
