@@ -7,9 +7,9 @@
     <list default="true" id="fa39f8c8-c33b-4b18-bea3-e90c99aa2e6e" name="Changes" comment="kfh">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NaturProduct/static/css/mainContent.css" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/static/css/mainContent.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NaturProduct/static/js/productPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/static/js/productPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NaturProduct/static/js/product_home.js" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/static/js/product_home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NaturProduct/templates/mainContent.html" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/templates/mainContent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NaturProduct/templates/productPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/NaturProduct/templates/productPage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

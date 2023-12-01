@@ -1,38 +1,68 @@
 window.addEventListener("DOMContentLoaded", (event) => {
-
-    var newCode = `
-    <div class="buttons-prod-buttons">
-        <button id="button-plus" type="button" class="button-plus buttons-place btn btn-outline-secondary me-0">
-            <a href="#" class="text-secondary">+</a>
-        </button>
-        <span id="selected-num" class="numb-style">1</span>
-        <button id="button-minus" type="button" class="button-minus buttons-place btn btn-outline-secondary me-0">
-            <a href="#" class="text-secondary">-</a>
-        </button>
-    </div>`;
+    var basket = document.getElementById('end');
+    var empty = document.getElementById('empty');
+    var prod_array = [];
+    // var newCode = `
+    // <div  class="сonteiner alert-success item">
+    //     <span>Продукт</span>
+    //     <div class="buttons-prod-buttons">
+    //         <button id="button-plus" type="button" class="button-plus buttons-place btn btn-outline-secondary me-0">
+    //             <snan href="#" class="text-secondary">+</span>
+    //         </button>
+    //         <span id="selected-num" class="numb-style">1</span>
+    //         <button id="button-minus" type="button" class="button-minus buttons-place btn btn-outline-secondary me-0">
+    //             <span href="#" class="text-secondary">-</span>
+    //         </button>
+    //     </div>
+    // </div>`;
 
 
     $('.button-add').on("click", function() {
-        $(this).style.visibility = "hidden";
-        $(this).closest(".prod-buttons").style.visibility = "visible";
+        var prod_id = this.id;
+        if(document.querySelector(`#button-plus-${prod_id}`)){
+            var numFind = document.querySelector(`#selected-num-${prod_id}`);
+            if(Number(numFind.textContent) < 100){
+                numFind.textContent = Number(numFind.textContent) + 1;  
+            }
+            return;
+        }
+        prod_array.push(prod_id);
+
+        var newCodeInsert = `
+    <div id="prod-${prod_id}" class="сonteiner alert-success item">
+        <span>Продукт</span>
+        <div class="buttons-prod-buttons">
+            <button id="button-plus-${prod_id}" type="button" class="button-plus buttons-place btn btn-outline-secondary me-0">
+                <snan href="#" class="text-secondary">+</span>
+            </button>
+            <span id="selected-num-${prod_id}" class="numb-style">1</span>
+            <button id="button-minus-${prod_id}" type="button" class="button-minus buttons-place btn btn-outline-secondary me-0">
+                <span href="#" class="text-secondary">-</span>
+            </button>
+        </div>
+    </div>`;
+
+        $("#prod-items").css("height", "75vh");
+        $("#prod-items").css("width", "20vw");
+        $("#prod-items").css("padding", "10px");
+        empty.remove();
+        $(basket).before(newCodeInsert);
+
+        document.querySelector(`#button-plus-${prod_id}`).onclick = function(e) {
+            var num = document.querySelector(`#selected-num-${prod_id}`);
+            if(Number(num.textContent) < 100){
+                num.textContent = Number(num.textContent) + 1;  
+            }
+        }
+
+        document.querySelector(`#button-minus-${prod_id}`).onclick = function(e) {
+            var num = document.querySelector(`#selected-num-${prod_id}`);
+            if(Number(num.textContent) > 0){
+                num.textContent = Number(num.textContent) - 1;  
+            }
+        }
     });
 
-    $('.button-plus').on("click", function() {
-        var num = $(this).closest(".numb-style");
-        if(Number(num.textContent) < 100){
-            num.textContent = Number(num_place.textContent) + 1;  
-        } 
-    });
-
-    $('.button-minus').on("click", function() {
-        var num = $(this).closest(".numb-style");
-        if(Number(num.textContent) > 0){
-            num.textContent = Number(num_place.textContent) - 1;
-        }
-        if(Number(num.textContent) === 1){
-            document.getElementById('.prod-buttons').classList.toggle('hidden');
-            document.getElementById('.button-add').classList.toggle('visible');
-        }
-    });
+    
 });
 

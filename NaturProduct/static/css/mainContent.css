@@ -32,7 +32,7 @@
 
 .fix-pos{
     position: sticky;
-    top: 2em;
+    top: 1em;
 }
 .pad-base {
     margin: 10px;
@@ -40,4 +40,34 @@
 
 .hide{
     visibility: hidden;
+}
+
+.basket{
+    display: flex;
+    justify-content: space-around;
+    height: 90vh;
+    align-items: stretch;
+
+}
+.prod-basket{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 0vw;
+    height: 0vh;
+    overflow: auto;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5em;
+    width: 100%;
+    margin: 0 0 7px 0;
 }
