@@ -2,7 +2,7 @@ from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
 
-from main.models import Product, Request, Order, OrderProduct
+from shop.models import Product, Request, Order, OrderProduct
 from .models import User, Employee
 from .forms import CustomUserCreationForm, CustomUserChangeForm
 

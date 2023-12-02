@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from users import views
-from main.views import Products_home, ProductPageView
+from shop.views import Products_home, ProductPageView
 from django.conf import settings
 from django.conf.urls.static import static
 
@@ -28,6 +28,6 @@ urlpatterns = [
     path('users/', include('django.contrib.auth.urls')),
     path('users/', include('users.urls')),
     path('signup/', views.SignUp.as_view(), name='signup'),
-    path('product/', include('main.urls')),
+    path('product/', include('shop.urls')),
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

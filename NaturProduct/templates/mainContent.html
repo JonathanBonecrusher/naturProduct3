@@ -44,7 +44,9 @@
                             <div class="buttons-prod">
                                 <span class="cost">{{ prod.productCost }} руб.</span>
                                 <div id="button-add"  class="add-buttons">
-                                    <button id="{{prod.pk}}" type="button" class="button-add btn btn-outline-secondary me-0">Добавить в корзину</button>
+                                    <form action="{% url 'cart:cart_add' prod.pk}" method="post">
+                                        <button id="{{prod.pk}}" type="button" class="button-add btn btn-outline-secondary me-0">Добавить в корзину</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>

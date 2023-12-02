@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('main', '0001_initial'),
+        ('shop', '0001_initial'),
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
         ('users', '0001_initial'),
     ]
@@ -24,12 +24,12 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='orderproduct',
             name='OrderId',
-            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, to='main.order'),
+            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, to='shop.order'),
         ),
         migrations.AddField(
             model_name='orderproduct',
             name='ProductId',
-            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, to='main.product'),
+            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, to='shop.product'),
         ),
         migrations.AddField(
             model_name='order',

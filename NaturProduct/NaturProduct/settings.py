@@ -37,8 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main',
-    'users'
+    'shop',
+    'users',
+    'cart'
 ]
 
 MIDDLEWARE = [
@@ -137,3 +138,5 @@ AUTH_USER_MODEL = 'users.User'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 LANGUAGE_CODE = 'ru-RU'
+
+CART_SESSION_ID = 'cart'
